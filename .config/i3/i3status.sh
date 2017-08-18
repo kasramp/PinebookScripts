@@ -1,6 +1,8 @@
 #!/bin/sh
 
 charging="Charging"
+discharging="Discharging"
+fully_charged="Fully-charged"
 battery_status=""
 
 update_battery_status() {
@@ -10,11 +12,21 @@ update_battery_status() {
   if [ "$state" = "$charging" ]
   then
 
-    battery_status=$(echo "CHR ⚡: $percentage $state")
+      battery_status=$(echo "CHR ⚡: $percentage $state")
+
+  elif [ "$state" = "$discharging" ]
+  then
+      
+      battery_status=$(echo "BAT ⏳: $percentage $state")
+
+  elif [ "$state" = "$fully_charged" ]
+  then
+      
+      battery_status=$(echo "CHR ☻: $percentage $state")
 
   else
 
-    battery_status=$(echo "BAT ⏳: $percentage $state")
+      battery_status=$(echo "UNK ?")
   fi
 }
 
