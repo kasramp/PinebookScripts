@@ -155,3 +155,8 @@ bar {
         status_command ~/.config/i3/i3status.sh # Custom i3status to show battery status for Pinebook     
 	tray_output primary
 }
+
+bindsym XF86AudioMute exec amixer -D pulse sset Master toggle 
+bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 5%+
+bindsym XF86AudioLowerVolume exec amixer -D pulse sset Master 5%-
+
