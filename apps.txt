@@ -1,0 +1,10 @@
+sudo apt install i3
+sudo apt install lightdm-gtk-greeter-settings # to be able to switch to different WM or DM
+sudo apt install dmenu
+sudo apt install i3status
+sudo apt install firefox
+sudo apt install tmux
+sudo apt install python3-pip
+sudo apt install ranger
+sudo apt install surfraw
+sudo apt install w3m w3m-img
