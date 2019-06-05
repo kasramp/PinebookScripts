@@ -12,6 +12,10 @@ if [ 0 -eq $# ]
   elif [ $1 = "-i" ]
   then
       apt -y install acpid
+      chmod a+x set_default_sound_card.sh
+      source set_default_sound_card.sh
+      chmod a+x set_default_volumes.sh
+      source set_default_volumes.sh
       cp audio_jack_plugged_in /etc/acpi/events/
       cp audio_jack_plugged_in.sh /etc/acpi/
       chmod a+x /etc/acpi/audio_jack_plugged_in.sh

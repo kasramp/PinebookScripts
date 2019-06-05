@@ -4,16 +4,14 @@ case "$1" in
     jack/headphone)
         case "$3" in
             plug)
-                amixer sset 'speaker volume' 0
-                # amixer -D pulse sset Master 50% not working yet
-                amixer sset 'headphone volume' 100
+                amixer -c 1 sset 'External Speaker' off
+                amixer -c 1 sset 'Headphone' on
             ;;
             unplug)
-                amixer sset 'headphone volume' 0
-                # amixer -D pulse sset Master 50% not working yet
-                amixer sset 'speaker volume' 100
+                echo "Hello"
+                amixer -c 1 sset 'External Speaker' on
+                amixer -c 1 sset 'Headphone' off
             ;;
         esac
     ;;
 esac
-

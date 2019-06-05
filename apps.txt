@@ -8,3 +8,6 @@ sudo apt install python3-pip
 sudo apt install ranger
 sudo apt install surfraw
 sudo apt install w3m w3m-img
+sudo apt-get install fonts-powerline
+sudo apt install terminator
+sudo apt install vim-gtk
