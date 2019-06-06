@@ -8,4 +8,8 @@ alias mmc='cd /media/kixz/rootfs'
 alias pip='pip3'
 alias mpv='sh /home/kixz/scripts/mpv_play.sh'
 alias vscode='code-oss'
-alias vscode='code-oss'
+JAVA_HOME=/home/kixz/Private/jdk1.8.0_191/
+export JAVA_HOME
+PATH=$JAVA_HOME/bin:$PATH
+export PATH 
+
