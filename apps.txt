@@ -19,3 +19,8 @@ sudo apt install vim-gtk
 sudo ./vs-code-installer.sh
 sudo apt install astyle
 sudo apt install tidy pandoc
+sudo apt-get install libncurses5-dev
+sudo apt-get install libncursesw5-dev
+sudo apt install links2 links
+sudo apt install lynx lynx-common lynx-cur
+sudo apt install mplayer
