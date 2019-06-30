@@ -31,3 +31,6 @@ sudo apt-get install python-dev libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-t
 sudo apt-get install libfreetype2-dev
 sudo apt-get install python3-dev
 sudo apt install fbcat
+sudo apt-get install python-software-properties
+sudo apt install i3blocks
+sudo apt install xbacklight
