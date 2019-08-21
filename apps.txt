@@ -34,3 +34,6 @@ sudo apt install fbcat
 sudo apt-get install python-software-properties
 sudo apt install i3blocks
 sudo apt install xbacklight
+sudo apt install dillo
+sudo apt install midori
+sudo apt install gedit
