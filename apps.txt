@@ -37,3 +37,4 @@ sudo apt install xbacklight
 sudo apt install dillo
 sudo apt install midori
 sudo apt install gedit
+sudo apt install pulsemixer
